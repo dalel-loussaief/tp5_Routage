@@ -1,0 +1,9 @@
+<h2>Liste des articles</h2>
+<ul>
+  <li *ngFor="let article of articles" (click)="goToArticle(article.id)">
+    {{ article.title }}
+  </li>
+</ul>
+<!-- <li *ngFor="let article of articles">
+  <a [routerLink]="['/articles', article.id]">{{ article.title }}</a>
+</li> -->
